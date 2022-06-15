@@ -1,91 +1,332 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<html lang="en" data-theme="cupcake">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="./style.css">
-    <title>Bruce Portfolio</title>
-</head>
-<body>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark p-2 semi-tran opacity-75">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">HOME</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#hobby">Hobby</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Contact Me</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.15.3/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Frontend Developer | Bruce</title>
+  </head>
 
-    <div class="introDiv">
-        <div class="myName p-1 animate__animated animate__fadeIn animate__slower">Hi, I am <strong class="">Bruce Luk.</strong></div>
-        <div class="title p-1 animate__animated animate__fadeIn animate__delay-2s animate__slower">Junior Frontend Developer</div>
-    </div>
+  <body>
+    <header class="navbar bg-primary text-primary-content sticky top-0 z-50">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost md:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </label>
+          <ul
+            tabindex="0"
+            class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-neutral text-neutral-content rounded-box"
+          >
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#project">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost normal-case text-xl ml-4" href="#">HOME</a>
+      </div>
+      <div class="navbar-center hidden md:flex">
+        <ul class="menu menu-horizontal p-0">
+          <li><a class="mx-2" href="#about">About</a></li>
+          <li><a class="mx-2" href="#skills">Skills</a></li>
+          <li><a class="mx-2" href="#project">Work</a></li>
+          <li><a class="mx-2" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end"></div>
+    </header>
 
-    <div class="aboutDiv d-flex flex-row p-4 justify-content-center" id="about">
-        <div class="about row-6 col fs-1 mx-4">About Me
-            <div class="intro col fs-3 my-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero quidem dignissimos labore earum tenetur laudantium porro dicta. Accusamus quibusdam, magnam itaque ipsum, provident, id perferendis ea sed perspiciatis quam similique.
-            </div>
-            <div class="col fs-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure voluptas quod velit. Autem minima officia quidem eos vel, dicta magnam obcaecati excepturi libero exercitationem aperiam unde molestiae placeat aliquid quae.
-            </div>
-        </div>
-        <div class="row-6 m-4"><img class="proPic img-fluid" src="./asset/abtMe.jpg" alt="Responsive image"></div>
-    </div>
-
-    <div class="d-flex justify-content-around secColor p-4">
-        <div class="card my-4 shadow-lg" style="width: 25%;">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Football_iu_1996.jpg/300px-Football_iu_1996.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h3>Football</h3>
-              <p class="card-text">Football is one of my favourite sports and I usually play it once a week.</p>
-            </div>
-        </div>
-        <div class="card my-4 shadow-lg" style="width: 25%;" id="hobby">
-            <img src="https://imgs.weekendhk.com/wp-content/uploads/2022/04/onlinegamefea_201171660262467d4e7a419.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-            <h3>Online Games</h3>
-            <p class="card-text">I love playing online games when I was young.</p>
-            </div>
-        </div>
-        <div class="card my-4 shadow-lg" style="width: 25%;">
-            <img src="https://frontiersinblog.files.wordpress.com/2017/05/frontiers-in-psychology-group-music-depression.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-            <h3>Music</h3>
-            <p class="card-text">Listening music is a way for me to relieve my stress.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- <div>
-        <div class="input-group mb-3">
-            <span class="input-group-text" id="basic-addon1">Your Name</span>
-            <input type="text" class="form-control" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1">
+    <section class="bg-primary flex justify-center" id="intro">
+      <div
+        class="mockup-code bg-primary text-primary-content pt-10 pb-12 sm:pt-12 sm:pb-16 wrapper"
+      >
+        <pre class="flex justify-center">
+            <code class="text-lg md:pb-4 md:pt-6 md:text-2xl sm:text-xl pb-2 pt-4">Hi!I'm</code>
+        </pre>
+        <pre class="flex justify-center">
+            <code class="text-6xl text-warning mono lg:text-9xl sm:text-8xl"><b>Bruce Luk</b></code>
+        </pre>
+        <pre class="flex justify-center">
+            <code class="pb-5 pt-2 md:pb-8 md:pt-4 text-2xl lg:text-5xl sm:text-4xl">A Frontend Developer</code>
+        </pre>
+        <div class="flex justify-center">
+          <div
+            class="btn btn-accent w-24 text-md md:w-32 md:text-xl btn-sm md:btn-md"
+          >
+            <a href="#project">Explore</a>
           </div>
-          <div class="input-group mb-3">
-            <span class="input-group-text" id="basic-addon1"></span>
-            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 bg-base-200" id="about">
+      <div class="wrapper">
+        <p class="text-accent mono text-5xl text-center lg:text-left lg:pb-6">
+          Who Am I
+        </p>
+        <div class="md:grid md:grid-cols-2 flex flex-col-reverse">
+          <div class="intro-text">
+            <div class="text-xl">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero
+              quidem dignissimos labore earum tenetur laudantium porro dicta.
+              Accusamus quibusdam, magnam itaque ipsum, provident, id
+              perferendis ea sed perspiciatis quam similique.
+            </div>
+            <div class="text-xl">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+              voluptas quod velit. Autem minima officia quidem eos vel, dicta
+              magnam obcaecati excepturi libero exercitationem aperiam unde
+              molestiae placeat aliquid quae.
+            </div>
           </div>
-    </div> -->
+          <div class="avatar my-10 justify-center md:my-0 md:pt-4 lg:pt-0">
+            <div
+              class="rounded-full ring-4 ring-primary ring-offset-base-100 ring-offset-2 w-72 h-72"
+            >
+              <img src="./asset/abtMe.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="text-center py-16 bg-primary" id="skills">
+      <div class="wrapper">
+        <h1 class="text-warning mono text-4xl sm:text-5xl mb-10">
+          Tools I'd Use and I Can Work With
+        </h1>
+        <div class="grid justify-items-center gap-8 grid-cols-3 lg:grid-cols-6">
+          <img
+            width="100px"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+          />
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-</body>
+          <img
+            alt="HTML5"
+            width="100px"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+          />
+          <img
+            alt="CSS3"
+            width="100px"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+          />
+          <img
+            alt="JavaScript"
+            width="100px"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+          />
+
+          <img
+            alt="jQuery"
+            width="100px"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg"
+            tyle="padding-block: 30px"
+          />
+
+          <img
+            alt="React"
+            width="100px"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+          />
+          <img alt="Command Line" width="100px" src="./asset/terminal.png" />
+          <img
+            alt="Git"
+            width="100px"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+          />
+          <i
+            class="devicon-github-original"
+            alt="GitHub"
+            style="font-size: 100px; color: white"
+          ></i>
+          <img
+            alt="Bootstrap"
+            width="100px"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+          />
+          <i
+            alt="Tailwind"
+            class="devicon-tailwindcss-plain colored"
+            style="font-size: 100px"
+          ></i>
+          <img
+            alt="Redux"
+            width="100px"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="p-4 bg-base-200 text-center py-16" id="project">
+      <div class="wrapper">
+        <h1 class="text-accent mono text-4xl sm:text-5xl mb-10">
+          Projects I've Made
+        </h1>
+        <div class="project-container flex justify-around flex-wrap  text-start">
+          <div class="card mb-4 shadow-2xl bg-base-100">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Football_iu_1996.jpg/300px-Football_iu_1996.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h3 class="text-3xl"><strong>Football</strong></h3>
+              <p class="card-text text-lg">
+                Football is one of my favourite sports and I usually play it
+                once a week.
+              </p>
+            </div>
+          </div>
+          <div class="card my-4 shadow-2xl bg-base-100" id="hobby">
+            <img
+              src="https://imgs.weekendhk.com/wp-content/uploads/2022/04/onlinegamefea_201171660262467d4e7a419.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h3 class="text-3xl"><strong>Online Games</strong></h3>
+              <p class="card-text text-lg">
+                I love playing online games when I was young.
+              </p>
+            </div>
+          </div>
+          <div class="card my-4 shadow-2xl bg-base-100">
+            <img
+              src="https://frontiersinblog.files.wordpress.com/2017/05/frontiers-in-psychology-group-music-depression.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h3 class="text-3xl"><strong>Music</strong></h3>
+              <p class="card-text text-lg">
+                Listening music is a way for me to relieve my stress.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="text-center py-10 bg-primary text-primary-content"
+      id="contact"
+    >
+      <div class="wrapper">
+        <h1 class="text-warning mono text-5xl mb-4">Get In Touch</h1>
+
+        <div
+          class="contact-container flex flex-col-reverse justify-center lg:grid grid-cols-2 gap-6"
+        >
+          <div class="input-container justify-self-end">
+            <p class="text-2xl pb-4">
+              Feel free to contact me if you have any question. I look forward
+              to hearing from you.
+            </p>
+            <div class="form-control">
+              <label class="input-group input-group-md my-2 justify-center">
+                <span class="w-28 flex justify-center text-base md:text-xl"
+                  >Name</span
+                >
+                <input
+                  type="text"
+                  placeholder="Name"
+                  class="input input-bordered input-accent w-72 sm:w-96 lg:w-72 xl:w-96 input-md"
+                />
+              </label>
+            </div>
+            <div class="form-control">
+              <label class="input-group input-group-md my-2 justify-center">
+                <span class="w-28 flex justify-center text-base md:text-xl"
+                  >Email</span
+                >
+                <input
+                  type="text"
+                  placeholder="Email"
+                  class="input input-bordered input-accent w-72 sm:w-96 lg:w-72 xl:w-96 input-md"
+                />
+              </label>
+            </div>
+            <div class="form-control">
+              <label
+                class="input-group input-group-lg mt-2 mb-4 justify-center"
+              >
+                <span class="w-28 flex justify-center text-base md:text-xl"
+                  >Message</span
+                >
+                <textarea
+                  class="textarea textarea-accent input-bordered w-72 sm:w-96 xl:w-96 h-36 lg:w-72"
+                  placeholder="Your message"
+                ></textarea>
+              </label>
+            </div>
+            <button class="btn btn-accent btn-md">Send</button>
+          </div>
+          <div class="contact-text text-3xl">
+            <div class="mb-8">
+              <strong>Find me on these online platform</strong>
+            </div>
+
+            <div class="flex justify-evenly">
+              <a
+                href="https://www.linkedin.com/in/bruce-webdeveloper"
+                target="_blank"
+                ><i
+                  alt="LinkedIn"
+                  class="devicon-linkedin-plain colored"
+                  style="font-size: 6rem"
+                ></i
+              ></a>
+              <a href="https://github.com/LTo666" target="_blank">
+                <i
+                  alt="GitHub"
+                  class="devicon-github-original colored"
+                  style="font-size: 6rem"
+                ></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="footer flex justify-center p-2 sm:p-4 bg-neutral text-neutral-content"
+    >
+      <div class="items-center grid-flow-col text-xs sm:text-sm">
+        <p>© Copyright 2022 - Designed by Bruce Luk</p>
+        <a></a>
+      </div>
+      <div
+        class="grid-flow-col gap-4 md:place-self-center md:justify-self-end"
+      ></div>
+    </footer>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
 </html>
