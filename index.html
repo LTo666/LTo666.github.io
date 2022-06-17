@@ -18,10 +18,10 @@
   </head>
 
   <body>
-    <header class="navbar bg-primary text-primary-content sticky top-0 z-50">
+    <header class="transition-all ease-in duration-300 navbar bg-primary text-primary-content pt-4 sticky top-0 z-50" id="header">
       <div class="navbar-start">
         <div class="dropdown">
-          <label tabindex="0" class="btn btn-ghost md:hidden">
+          <label tabindex="0" class="transition-all btn btn-ghost btn-lg md:hidden hover:btn-warning">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-5 w-5"
@@ -32,29 +32,30 @@
               <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                stroke-width="2"
+                stroke-width="4"
                 d="M4 6h16M4 12h8m-8 6h16"
               />
             </svg>
           </label>
-          <ul
+          <div
             tabindex="0"
-            class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-neutral text-neutral-content rounded-box"
+            class="menu menu-compact dropdown-content mt-3 p-2 shadow-2xl shadow-neutral-600 bg-primary rounded-box w-80 text-center"
+            id="navbox"
           >
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#project">Work</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+            <a href="#about" ><button class="btn btn-primary w-full hover:btn-warning hover:duration-500 hover:ease-out">About</button></a>
+            <a href="#skills"><button class="btn btn-primary w-full hover:btn-warning hover:duration-500 hover:ease-out">Skills</button></a>
+            <a href="#project"><button class="btn btn-primary w-full hover:btn-warning hover:duration-500 hover:ease-out">Work</button></a>
+            <a href="#contact"><button class="btn btn-primary w-full hover:btn-warning hover:duration-500 hover:ease-out">Contact</button></a>
+          </div>
         </div>
-        <a class="btn btn-ghost normal-case text-xl ml-4" href="#">HOME</a>
+        <a class="transition-all btn btn-ghost text-3xl btn-lg normal-case ml-4 hover:btn-warning hover:duration-500 hover:ease-out" href="#"><strong>HOME</strong></a>
       </div>
       <div class="navbar-center hidden md:flex">
         <ul class="menu menu-horizontal p-0">
-          <li><a class="mx-2" href="#about">About</a></li>
-          <li><a class="mx-2" href="#skills">Skills</a></li>
-          <li><a class="mx-2" href="#project">Work</a></li>
-          <li><a class="mx-2" href="#contact">Contact</a></li>
+          <li><a class="transition-all mx-2 hover:btn-warning text-2xl" href="#about">About</a></li>
+          <li><a class="transition-all mx-2 text-2xl hover:btn-warning hover:duration-500 hover:ease-out" href="#skills">Skills</a></li>
+          <li><a class="transition-all mx-2 text-2xl hover:btn-warning hover:duration-500 hover:ease-out" href="#project">Work</a></li>
+          <li><a class="transition-all mx-2 text-2xl hover:btn-warning hover:duration-500 hover:ease-out" href="#contact">Contact</a></li>
         </ul>
       </div>
       <div class="navbar-end"></div>
@@ -62,7 +63,7 @@
 
     <section class="bg-primary flex justify-center" id="intro">
       <div
-        class="mockup-code bg-primary text-primary-content pt-10 pb-12 sm:pt-12 sm:pb-16 wrapper"
+        class="mockup-code bg-primary text-primary-content pt-6 pb-12 sm:pt-8 sm:pb-16 wrapper"
       >
         <pre class="flex justify-center">
             <code class="text-lg md:pb-4 md:pt-6 md:text-2xl sm:text-xl pb-2 pt-4">Hi!I'm</code>
@@ -96,6 +97,7 @@
               Accusamus quibusdam, magnam itaque ipsum, provident, id
               perferendis ea sed perspiciatis quam similique.
             </div>
+            <br />
             <div class="text-xl">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
               voluptas quod velit. Autem minima officia quidem eos vel, dicta
@@ -105,7 +107,7 @@
           </div>
           <div class="avatar my-10 justify-center md:my-0 md:pt-4 lg:pt-0">
             <div
-              class="rounded-full ring-4 ring-primary ring-offset-base-100 ring-offset-2 w-72 h-72"
+              class="rounded-full ring-4 ring-primary ring-offset-base-100 ring-offset-2 w-72 h-72 shadow-2xl shadow-cyan-800"
             >
               <img src="./asset/abtMe.jpg" />
             </div>
@@ -119,65 +121,65 @@
         <h1 class="text-warning mono text-4xl sm:text-5xl mb-10">
           Tools I'd Use and I Can Work With
         </h1>
-        <div class="grid justify-items-center gap-8 grid-cols-3 lg:grid-cols-6">
+        <div class="grid justify-items-center gap-8 grid-cols-3 lg:grid-cols-6 sm:gap-12" id="tools-container">
           <img
             alt="Visual Studio Code"
-            class="w-16 sm:w-24"
+            class="w-16 sm:w-24 transition-all hover:ease-in-out hover:duration-300"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
           />
 
           <img
             alt="HTML5"
-            class="w-16 sm:w-24"
+            class="w-16 sm:w-24 transition-all hover:ease-in-out hover:duration-300"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
           />
           <img
             alt="CSS3"
-            class="w-16 sm:w-24"
+            class="w-16 sm:w-24 transition-all hover:ease-in-out hover:duration-300"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
           />
           <img
             alt="JavaScript"
-            class="w-16 sm:w-24"
+            class="w-16 sm:w-24 transition-all hover:ease-in-out hover:duration-300"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
           />
 
           <img
             alt="jQuery"
-            class="w-16 sm:w-24"
+            class="w-16 sm:w-24 transition-all hover:ease-in-out hover:duration-300"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg"
             tyle="padding-block: 30px"
           />
           <i
-            class="devicon-react-original text-[4rem] sm:text-[6rem] text-[#79fdff]"
+            class="devicon-react-original text-[4rem] sm:text-[6rem] text-[#79fdff] transition-all hover:ease-in-out hover:duration-300"
             alt="React"
           ></i>
           <img
             alt="Command Line"
-            class="w-16 sm:w-24"
+            class="w-16 sm:w-24 transition-all hover:ease-in-out hover:duration-300"
             src="./asset/terminal.png"
           />
           <img
             alt="Git"
-            class="w-16 sm:w-24"
+            class="w-16 sm:w-24 transition-all hover:ease-in-out hover:duration-300"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
           />
           <i
-            class="devicon-github-original text-[4rem] sm:text-[6rem] text-[white]"
+            class="devicon-github-original text-[4rem] sm:text-[6rem] text-[white] transition-all hover:ease-in-out hover:duration-300"
             alt="GitHub"
           ></i>
           <img
             alt="Bootstrap"
-            class="w-16 sm:w-24"
+            class="w-16 sm:w-24 transition-all hover:ease-in-out hover:duration-300"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
           />
           <i
             alt="Tailwind"
-            class="devicon-tailwindcss-plain colored text-[4rem] sm:text-[6rem] text-[#16a6bf]"
+            class="devicon-tailwindcss-plain colored text-[4rem] sm:text-[6rem] text-[#16a6bf] transition-all hover:ease-in-out hover:duration-300"
           ></i>
           <img
             alt="Redux"
-            class="w-16 sm:w-24"
+            class="w-16 sm:w-24 transition-all hover:ease-in-out hover:duration-300"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
           />
         </div>
@@ -190,7 +192,7 @@
           Projects I've Made
         </h1>
         <div class="project-container flex justify-around flex-wrap text-start">
-          <div class="card mb-4 shadow-2xl bg-base-100">
+          <div class="card mb-4 shadow-2xl shadow-gray-500 bg-base-100">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Football_iu_1996.jpg/300px-Football_iu_1996.jpg"
               class="card-img-top"
@@ -204,7 +206,7 @@
               </p>
             </div>
           </div>
-          <div class="card my-4 shadow-2xl bg-base-100" id="hobby">
+          <div class="card my-4 shadow-2xl shadow-gray-500 bg-base-100" id="hobby">
             <img
               src="https://imgs.weekendhk.com/wp-content/uploads/2022/04/onlinegamefea_201171660262467d4e7a419.jpg"
               class="card-img-top"
@@ -217,7 +219,7 @@
               </p>
             </div>
           </div>
-          <div class="card my-4 shadow-2xl bg-base-100">
+          <div class="card my-4 shadow-2xl shadow-gray-500 bg-base-100">
             <img
               src="https://frontiersinblog.files.wordpress.com/2017/05/frontiers-in-psychology-group-music-depression.jpg"
               class="card-img-top"
@@ -235,19 +237,23 @@
     </section>
 
     <section
-      class="text-center py-10 bg-primary text-primary-content"
+      class="text-center pt-16 pb-8 bg-primary text-primary-content"
       id="contact"
     >
       <div class="wrapper">
-        <h1 class="text-warning mono text-5xl mb-4">Get In Touch</h1>
+        <h1 class="text-warning mono text-5xl mb-8">Get In Touch</h1>
 
         <div
           class="contact-container flex flex-col-reverse justify-center lg:grid grid-cols-2 gap-6"
         >
           <div class="input-container justify-self-end">
-            <p class="text-2xl pb-4">
-              Feel free to contact me if you have any questions. I look forward to hearing from you.
-            </p>
+            <div class="input-text-container flex justify-center">
+              <p class="text-2xl pb-4 sm:w-[31rem] text-center">
+                Feel free to contact me if you have any questions. I look
+                forward to hearing from you.
+              </p>
+            </div>
+
             <div class="form-control">
               <label class="input-group input-group-md my-2 justify-center">
                 <span class="w-28 flex justify-center text-base md:text-xl"
@@ -256,7 +262,7 @@
                 <input
                   type="text"
                   placeholder="Name"
-                  class="input input-bordered input-accent w-72 sm:w-96 lg:w-72 xl:w-96 input-md"
+                  class="input input-bordered input-accent w-72 sm:w-96 lg:w-72 xl:w-96 input-md focus:border-2"
                 />
               </label>
             </div>
@@ -268,7 +274,7 @@
                 <input
                   type="text"
                   placeholder="Email"
-                  class="input input-bordered input-accent w-72 sm:w-96 lg:w-72 xl:w-96 input-md"
+                  class="input input-bordered input-accent w-72 sm:w-96 lg:w-72 xl:w-96 input-md focus:border-2 "
                 />
               </label>
             </div>
@@ -280,7 +286,7 @@
                   >Message</span
                 >
                 <textarea
-                  class="textarea textarea-accent input-bordered w-72 sm:w-96 xl:w-96 h-36 lg:w-72"
+                  class="textarea textarea-accent input-bordered w-72 sm:w-96 xl:w-96 h-36 lg:w-72 focus:border-2"
                   placeholder="Your message"
                 ></textarea>
               </label>
@@ -288,25 +294,24 @@
             <button class="btn btn-accent btn-md">Send</button>
           </div>
           <div class="contact-text text-3xl">
-            <div class="mb-8">
+            <div class="mb-12">
               <strong>Find me on these online platforms</strong>
             </div>
 
-            <div class="flex justify-evenly">
+            <div class="flex justify-evenly" id="platforms-container">
               <a
                 href="https://www.linkedin.com/in/bruce-webdeveloper"
                 target="_blank"
+                class="transition-all ease-in-out duration-300 "
                 ><i
                   alt="LinkedIn"
-                  class="devicon-linkedin-plain colored"
-                  style="font-size: 6rem"
+                  class="devicon-linkedin-plain colored transition-colors duration-500 hover:text-[#EF9FBC] text-[6rem]"
                 ></i
               ></a>
-              <a href="https://github.com/LTo666" target="_blank">
+              <a href="https://github.com/LTo666" target="_blank" class="transition-all hover:ease-in-out hover:duration-300 ">
                 <i
                   alt="GitHub"
-                  class="devicon-github-original colored"
-                  style="font-size: 6rem"
+                  class="devicon-github-original colored text-[6rem]  transition-colors duration-500 hover:text-[#EF9FBC]"
                 ></i>
               </a>
             </div>
@@ -325,5 +330,7 @@
     </footer>
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
   </body>
 </html>
