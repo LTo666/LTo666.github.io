@@ -18,22 +18,29 @@
   </head>
 
   <body>
-    <header class="transition-all ease-in duration-300 navbar bg-primary text-primary-content pt-4 sticky top-0 z-50" id="header">
+    <header
+      class="transition-colors ease-out duration-300 navbar bg-primary text-primary-content pt-4 sticky top-0 z-50"
+      id="header"
+    >
       <div class="navbar-start">
         <div class="dropdown">
-          <label tabindex="0" class="transition-all btn btn-ghost btn-lg md:hidden hover:btn-warning">
+          <label
+            tabindex="0"
+            class="transition-all ease-out duration-500 btn btn-ghost btn-lg md:hidden hover:btn-warning"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-5 w-5"
               fill="none"
               viewBox="0 0 24 24"
-              stroke="currentColor"
+              stroke="currentColor" 
             >
               <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="4"
                 d="M4 6h16M4 12h8m-8 6h16"
+                class="transition-all ease-out duration-500"
               />
             </svg>
           </label>
@@ -42,21 +49,65 @@
             class="menu menu-compact dropdown-content mt-3 p-2 shadow-2xl shadow-neutral-600 bg-primary rounded-box w-80 text-center"
             id="navbox"
           >
-            <a href="#about" ><button class="btn btn-primary w-full hover:btn-warning hover:duration-500 hover:ease-out">About</button></a>
-            <a href="#skills"><button class="btn btn-primary w-full hover:btn-warning hover:duration-500 hover:ease-out">Skills</button></a>
-            <a href="#project"><button class="btn btn-primary w-full hover:btn-warning hover:duration-500 hover:ease-out">Work</button></a>
-            <a href="#contact"><button class="btn btn-primary w-full hover:btn-warning hover:duration-500 hover:ease-out">Contact</button></a>
+            <a href="#about"
+              ><button
+                class="btn btn-primary w-full hover:btn-warning hover:duration-500 hover:ease-out normal-case"
+              >
+                About
+              </button></a
+            >
+            <a href="#skills"
+              ><button
+                class="btn btn-primary w-full hover:btn-warning hover:duration-500 hover:ease-out normal-case"
+              >
+                Skills
+              </button></a
+            >
+            <a href="#project"
+              ><button
+                class="btn btn-primary w-full hover:btn-warning hover:duration-500 hover:ease-out normal-case"
+              >
+                Work
+              </button></a
+            >
+            <a href="#contact"
+              ><button
+                class="btn btn-primary w-full hover:btn-warning hover:duration-500 hover:ease-out normal-case"
+              >
+                Contact
+              </button></a
+            >
           </div>
         </div>
-        <a class="transition-all btn btn-ghost text-3xl btn-lg normal-case ml-4 hover:btn-warning hover:duration-500 hover:ease-out" href="#"><strong>HOME</strong></a>
+        <a
+          class="transition-all btn btn-ghost text-3xl btn-lg normal-case ml-4 hover:btn-warning duration-500 ease-out"
+          href="#"
+          ><strong>HOME</strong></a
+        >
       </div>
       <div class="navbar-center hidden md:flex">
-        <ul class="menu menu-horizontal p-0">
-          <li><a class="transition-all mx-2 hover:btn-warning text-2xl" href="#about">About</a></li>
-          <li><a class="transition-all mx-2 text-2xl hover:btn-warning hover:duration-500 hover:ease-out" href="#skills">Skills</a></li>
-          <li><a class="transition-all mx-2 text-2xl hover:btn-warning hover:duration-500 hover:ease-out" href="#project">Work</a></li>
-          <li><a class="transition-all mx-2 text-2xl hover:btn-warning hover:duration-500 hover:ease-out" href="#contact">Contact</a></li>
-        </ul>
+        <div class="menu menu-horizontal p-0 flex align-center">
+            <a
+              class="btn btn-ghost transition-all mx-2 text-2xl hover:btn-warning hover:duration-500 hover:ease-out normal-case"
+              href="#about"
+              >About</a
+            >
+            <a
+              class="btn btn-ghost transition-all mx-2 text-2xl hover:btn-warning hover:duration-500 hover:ease-out normal-case"
+              href="#skills"
+              >Skills</a
+            >
+            <a
+              class="btn btn-ghosttransition-all mx-2 text-2xl hover:btn-warning hover:duration-500 hover:ease-out normal-case"
+              href="#project"
+              >Work</a
+            >
+            <a
+              class="btn btn-ghost transition-all mx-2 text-2xl hover:btn-warning hover:duration-500 hover:ease-out normal-case"
+              href="#contact"
+              >Contact</a
+            >
+        </div>
       </div>
       <div class="navbar-end"></div>
     </header>
@@ -76,7 +127,7 @@
         </pre>
         <div class="flex justify-center">
           <div
-            class="btn btn-accent w-24 text-md md:w-32 md:text-xl btn-sm md:btn-md"
+            class="btn btn-accent w-24 text-md md:w-32 md:text-xl btn-md"
           >
             <a href="#project">Explore</a>
           </div>
@@ -121,7 +172,10 @@
         <h1 class="text-warning mono text-4xl sm:text-5xl mb-10">
           Tools I'd Use and I Can Work With
         </h1>
-        <div class="grid justify-items-center gap-8 grid-cols-3 lg:grid-cols-6 sm:gap-12" id="tools-container">
+        <div
+          class="grid justify-items-center gap-8 grid-cols-3 lg:grid-cols-6 sm:gap-12"
+          id="tools-container"
+        >
           <img
             alt="Visual Studio Code"
             class="w-16 sm:w-24 transition-all hover:ease-in-out hover:duration-300"
@@ -188,48 +242,71 @@
 
     <section class="p-4 bg-base-200 text-center py-16" id="project">
       <div class="wrapper">
-        <h1 class="text-accent mono text-4xl sm:text-5xl mb-10">
+        <h1 class="text-accent mono text-4xl sm:text-5xl mb-12">
           Projects I've Made
         </h1>
-        <div class="project-container flex justify-around flex-wrap text-start">
-          <div class="card mb-4 shadow-2xl shadow-gray-500 bg-base-100">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Football_iu_1996.jpg/300px-Football_iu_1996.jpg"
-              class="card-img-top"
-              alt="..."
-            />
+        <div class="text-start grid lg:grid-cols-2 gap-20 justify-items-center" id="project-container">
+          <div
+            class="card shadow-xl shadow-gray-500 bg-base-100 image-full w-96 h-72 transition-transform"
+          >
+            <figure>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Football_iu_1996.jpg/300px-Football_iu_1996.jpg"
+                class="w-full h-auto overflow-hidden"
+                alt="..."
+              />
+            </figure>
             <div class="card-body">
               <h3 class="text-3xl"><strong>Football</strong></h3>
               <p class="card-text text-lg">
                 Football is one of my favourite sports and I usually play it
                 once a week.
               </p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-outline btn-warning normal-case">See More</button>
+              </div>
             </div>
           </div>
-          <div class="card my-4 shadow-2xl shadow-gray-500 bg-base-100" id="hobby">
-            <img
+
+          <div
+            class="card shadow-xl shadow-gray-500 bg-base-100 image-full w-96 h-72 transition-transform"
+          >
+            <figure>
+              <img
               src="https://imgs.weekendhk.com/wp-content/uploads/2022/04/onlinegamefea_201171660262467d4e7a419.jpg"
-              class="card-img-top"
+              class=""
               alt="..."
             />
+            </figure>
             <div class="card-body">
               <h3 class="text-3xl"><strong>Online Games</strong></h3>
               <p class="card-text text-lg">
                 I love playing online games when I was young.
               </p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-outline btn-warning normal-case">See More</button>
+              </div>
             </div>
           </div>
-          <div class="card my-4 shadow-2xl shadow-gray-500 bg-base-100">
-            <img
+
+          <div
+            class="card shadow-xl shadow-gray-500 bg-base-100 image-full w-96 h-72 transition-transform"
+          >
+            <figure>
+              <img
               src="https://frontiersinblog.files.wordpress.com/2017/05/frontiers-in-psychology-group-music-depression.jpg"
-              class="card-img-top"
+              class=""
               alt="..."
             />
+            </figure>
             <div class="card-body">
               <h3 class="text-3xl"><strong>Music</strong></h3>
               <p class="card-text text-lg">
                 Listening music is a way for me to relieve my stress.
               </p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-outline btn-warning normal-case">See More</button>
+              </div>
             </div>
           </div>
         </div>
@@ -274,7 +351,7 @@
                 <input
                   type="text"
                   placeholder="Email"
-                  class="input input-bordered input-accent w-72 sm:w-96 lg:w-72 xl:w-96 input-md focus:border-2 "
+                  class="input input-bordered input-accent w-72 sm:w-96 lg:w-72 xl:w-96 input-md focus:border-2"
                 />
               </label>
             </div>
@@ -291,7 +368,7 @@
                 ></textarea>
               </label>
             </div>
-            <button class="btn btn-accent btn-md">Send</button>
+            <button class="btn btn-accent btn-md normal-case">Send</button>
           </div>
           <div class="contact-text text-3xl">
             <div class="mb-12">
@@ -302,16 +379,20 @@
               <a
                 href="https://www.linkedin.com/in/bruce-webdeveloper"
                 target="_blank"
-                class="transition-all ease-in-out duration-300 "
+                class="transition-all ease-in-out duration-300"
                 ><i
                   alt="LinkedIn"
                   class="devicon-linkedin-plain colored transition-colors duration-500 hover:text-[#EF9FBC] text-[6rem]"
                 ></i
               ></a>
-              <a href="https://github.com/LTo666" target="_blank" class="transition-all hover:ease-in-out hover:duration-300 ">
+              <a
+                href="https://github.com/LTo666"
+                target="_blank"
+                class="transition-all hover:ease-in-out hover:duration-300"
+              >
                 <i
                   alt="GitHub"
-                  class="devicon-github-original colored text-[6rem]  transition-colors duration-500 hover:text-[#EF9FBC]"
+                  class="devicon-github-original colored text-[6rem] transition-colors duration-500 hover:text-[#EF9FBC]"
                 ></i>
               </a>
             </div>
@@ -330,7 +411,11 @@
     </footer>
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
     <script src="./app.js"></script>
   </body>
 </html>

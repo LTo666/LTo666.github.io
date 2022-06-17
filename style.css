@@ -28,3 +28,7 @@ html {
 #platforms-container > a:hover {
   transform:scale(1.4);
 }
+
+#project-container > div:hover {
+  transform:scale(1.2);
+}

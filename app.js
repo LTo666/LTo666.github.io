@@ -1,8 +1,4 @@
 $(function () {
-  window.onscroll = () => {
-    scrollFunction()
-  }
-
   const scrollFunction = () => {
     if (
       document.body.scrollTop > 54 ||
@@ -16,6 +12,7 @@ $(function () {
       $('.navbar-start > a').addClass("text-xl")
       $('header label').removeClass("btn-lg")
       $('header path').attr("stroke-width", "2")
+      $('header path').attr("d", "M4 6h16M4 12h16M4 18h16")
       $('ul.menu a').removeClass("text-2xl")
       $('ul.menu a').addClass("btn-sm text-lg")
       $('#navbox button').removeClass('btn-primary')
@@ -28,9 +25,14 @@ $(function () {
       $('.navbar-start > a').removeClass("text-xl")
       $('header label').addClass("btn-lg")
       $('header path').attr("stroke-width", "4")
+      $('header path').attr("d", "M4 6h16M4 12h8m-8 6h16")
       $('ul.menu a').addClass("text-2xl")
       $('ul.menu a').removeClass("btn-sm text-lg")
       $('#navbox button').addClass('btn-primary')
     }
+  }
+
+  window.onscroll = () => {
+    scrollFunction()
   }
 })
