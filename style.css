@@ -54,6 +54,7 @@ html {
   padding-bottom: 1rem;
   bottom: 0;
   border-radius: 1rem;
+  background-color: rgba(250, 247, 245, 0.75);
 }
 
 .custom-card-text {
@@ -66,9 +67,16 @@ html {
   padding-top: 1rem;
 }
 
-.custom-card-body:hover {
+.custom-card-text button {
+  margin-top: 2rem;
+  margin-left: auto;
+  opacity: 0;
+}
+
+.custom-card:hover .custom-card-body {
   padding-block: 3rem;
-  background-color: rgba(41,19,52, 0.8);
+  background-color: rgba(41, 19, 52, 0.8);
+  color: hsl(var(--nc));
 }
 
 .custom-card:hover .custom-card-text {
@@ -76,7 +84,6 @@ html {
   opacity: 1;
 }
 
-.custom-card-text button {
-  margin-top: 2rem;
-  margin-left: auto;
+.custom-card:hover .btn {
+  opacity: 1;
 }
