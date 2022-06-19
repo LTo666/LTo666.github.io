@@ -22,7 +22,7 @@ html {
 }
 
 #tools-container img:hover, #tools-container i:hover {
-  transform:scale(1.3);
+  transform:scale(1.4);
 }
 
 #platforms-container > a:hover {
