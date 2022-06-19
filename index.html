@@ -53,7 +53,7 @@
             class="transition-all ease-out duration-500 menu menu-compact dropdown-content mt-3 p-2 shadow-2xl shadow-neutral-600 bg-primary text-primary-content rounded-box w-80 text-center"
             id="navbox"
           >
-            <a href="#about" class=""
+            <a href="#about"
               ><button
                 class="transition-all ease-out duration-500 btn btn-ghost text-2xl w-full my-4 hover:btn-warning normal-case"
               >
@@ -92,22 +92,22 @@
       <div class="navbar-center hidden md:flex">
         <div class="menu menu-horizontal p-0 flex align-center" id="nav-link">
           <a
-            class="btn btn-ghost transition-all mx-2 text-2xl hover:btn-warning duration-500 ease-out normal-case"
+            class="btn btn-ghost transition-all mx-2 text-xl hover:btn-warning duration-500 ease-out normal-case"
             href="#about"
             >About</a
           >
           <a
-            class="btn btn-ghost transition-all mx-2 text-2xl hover:btn-warning duration-500 ease-out normal-case"
+            class="btn btn-ghost transition-all mx-2 text-xl hover:btn-warning duration-500 ease-out normal-case"
             href="#skills"
             >Skills</a
           >
           <a
-            class="btn btn-ghost transition-all mx-2 text-2xl hover:btn-warning duration-500 ease-out normal-case"
+            class="btn btn-ghost transition-all mx-2 text-xl hover:btn-warning duration-500 ease-out normal-case"
             href="#project"
             >Work</a
           >
           <a
-            class="btn btn-ghost transition-all mx-2 text-2xl hover:btn-warning duration-500 ease-out normal-case"
+            class="btn btn-ghost transition-all mx-2 text-xl hover:btn-warning duration-500 ease-out normal-case"
             href="#contact"
             >Contact</a
           >
@@ -117,22 +117,26 @@
     </header>
 
     <section class="bg-primary flex justify-center" id="intro">
-      <div
-        class="mockup-code bg-primary text-primary-content pt-24 pb-28 md:pt-32 md:pb-32 wrapper wow animate__fadeIn"
-        data-wow-duration="3s"
-      >
-        <pre class="flex justify-center">
-            <code class="text-lg md:pb-4 md:pt-6 md:text-2xl sm:text-xl pb-2 pt-4" >Hi!I'm</code>
-        </pre>
-        <pre class="flex justify-center">
-            <code class="wow animate__rubberBand text-6xl text-warning mono lg:text-9xl sm:text-8xl" data-wow-duration="1s" data-wow-delay="2s" ><b>Bruce Luk</b></code>
-        </pre>
-        <pre class="flex justify-center">
-            <code class="pb-5 pt-2 md:pb-8 md:pt-4 text-2xl lg:text-5xl sm:text-4xl" >A Frontend Developer</code>
-        </pre>
-        <div class="flex justify-center">
-          <div class="btn btn-accent w-24 text-md md:w-32 md:text-xl btn-md">
-            <a href="#project">Explore</a>
+      <div class="wrapper pt-10 pb-16">
+        <div
+        class="mockup-code bg-primary text-primary-content wow animate__fadeIn border rounded-2xl border-[hsl(var(--pc))] border-2"
+        data-wow-duration="2s"
+        >
+          <div class="app-content wrapper pt-16 pb-10 md:pb-8 md:pt-12">
+            <pre class="flex justify-start pb-14 pl-1 sm:pl-2 lg:pl-3 md:pb-10">
+                <code class="text-lg md:text-2xl sm:text-xl" >Hi!I'm</code>
+            </pre>
+            <pre class="flex justify-start">
+                <code class="wow animate__rubberBand text-5xl text-warning mono lg:text-9xl md:text-8xl sm:text-7xl" data-wow-duration="1s" data-wow-delay="1.5s" ><b>Bruce Luk</b></code>
+            </pre>
+            <pre class="flex justify-start">
+                <code class="text-xl lg:text-5xl md:text-4xl sm:text-3xl pt-8 pb-24 pl-1 sm:pl-2 lg:pl-3 md:pt-6 md:pb-16" >A Frontend Developer</code>
+            </pre>
+            <div class="flex justify-end">
+              <div class="btn btn-accent w-24 text-md md:w-32 md:text-xl btn-md md:btn-lg">
+                <a href="#project">Explore</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -141,27 +145,27 @@
     <section class="py-16 bg-base-200" id="about">
       <div class="wrapper">
         <p
-          class="text-warning mono text-5xl text-center md:pb-6 lg:text-left lg:pb-6"
+          class="text-warning mono text-4xl sm:text-5xl text-center md:pb-10 lg:text-left"
         >
-          Who Am I
+          <strong>Who Is Bruce</strong>
         </p>
         <div class="md:grid md:grid-cols-2 flex flex-col-reverse">
-          <div class="intro-text wow animate__fadeInUp" data-wow-duration="2s">
-            <div class="text-3xl">
+          <div class="wow animate__fadeInUp intro-text px-4 md:px-0" data-wow-duration="1.5s">
+            <div class="text-xl md:text-3xl">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero
               quidem dignissimos labore earum tenetur laudantium porro dicta.
               Accusamus quibusdam, magnam itaque ipsum, provident, id
               perferendis ea sed perspiciatis quam similique.
             </div>
             <br />
-            <div class="text-3xl">
+            <div class="text-xl md:text-3xl">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
               voluptas quod velit. Autem minima officia quidem eos vel, dicta
               magnam obcaecati excepturi libero exercitationem aperiam unde
               molestiae placeat aliquid quae.
             </div>
           </div>
-          <div class="avatar my-10 justify-center md:my-0 md:pt-4 lg:pt-0 wow animate__fadeInUp" data-wow-duration="2s">
+          <div class="avatar my-10 mb-14 justify-center md:my-0 md:pt-4 lg:pt-0 wow animate__fadeInUp" data-wow-duration="1.5s">
             <div
               class="rounded-full ring-4 ring-primary ring-offset-base-100 ring-offset-2 w-72 h-72 shadow-2xl shadow-cyan-800"
             >
@@ -170,12 +174,13 @@
           </div>
         </div>
       </div>
+      </div>
     </section>
 
     <section class="text-center py-16 bg-primary" id="skills">
       <div class="wrapper">
-        <h1 class="text-warning mono text-4xl sm:text-5xl mb-10">
-          Tools I'd Use and I Can Work With
+        <h1 class="text-warning mono text-4xl sm:text-5xl pb-12">
+          <strong>Tools I'd Use and I Can Work With</strong>
         </h1>
         <div
           class="grid justify-items-center gap-8 grid-cols-3 lg:grid-cols-6 sm:gap-12"
@@ -247,8 +252,8 @@
 
     <section class="p-4 bg-base-200 text-center pt-16 pb-20" id="project">
       <div class="wrapper">
-        <h1 class="text-warning mono text-4xl sm:text-5xl mb-12">
-          Projects I've Made
+        <h1 class="text-warning mono text-4xl sm:text-5xl pb-12">
+          <strong>Projects I've Made</strong>
         </h1>
         <div
           class="text-start grid lg:grid-cols-2 gap-20 justify-items-center"
@@ -374,14 +379,14 @@
       id="contact"
     >
       <div class="wrapper">
-        <h1 class="text-warning mono text-5xl mb-8">Get In Touch</h1>
+        <h1 class="text-warning mono text-4xl sm:text-5xl mb-8"><strong>Get In Touch</strong></h1>
 
         <div
           class="contact-container flex flex-col-reverse justify-center lg:grid grid-cols-2 gap-6"
         >
           <div class="input-container justify-self-end">
             <div class="input-text-container flex justify-center">
-              <p class="text-2xl pb-4 sm:w-[31rem] text-center">
+              <p class="text-xl md:text-2xl pb-4 sm:w-[31rem] text-center">
                 Feel free to contact me if you have any questions. I look
                 forward to hearing from you.
               </p>
@@ -424,11 +429,11 @@
                 ></textarea>
               </label>
             </div>
-            <button class="btn btn-accent btn-md normal-case">Send</button>
+            <label for="my-modal-3" class="btn btn-accent btn-md normal-case modal-button">Send</label>
           </div>
-          <div class="contact-text text-3xl">
-            <div class="mb-12">
-              <strong>Find me on these online platforms</strong>
+          <div class="contact-text text-2xl md:text-3xl">
+            <div class="mb-12 font-semibold">
+              Find me on these online platforms
             </div>
 
             <div class="flex justify-evenly" id="platforms-container">
@@ -468,6 +473,15 @@
         <a></a>
       </div>
     </footer>
+
+    <input type="checkbox" id="my-modal-3" class="modal-toggle" />
+    <div class="modal">
+      <div class="modal-box relative">
+        <label for="my-modal-3" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+        <h3 class="text-xl font-bold">Thank you!</h3>
+        <p class="py-4">Your message is well received. I'll get back to you ASAP.</p>
+      </div>
+    </div>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
