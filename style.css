@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap");
 
 html,
 body {
@@ -19,23 +19,23 @@ html {
 
 .mono {
   font-family: "Montserrat", sans-serif;
-
 }
 
 .app-content {
   border-top: 2px solid hsl(var(--pc));
 }
 
-#tools-container img:hover, #tools-container i:hover {
-  transform:scale(1.4);
+#tools-container img:hover,
+#tools-container i:hover {
+  transform: scale(1.4);
 }
 
 #platforms-container > a:hover {
-  transform:scale(1.4);
+  transform: scale(1.4);
 }
 
 #project-container > div:hover {
-  transform:scale(1.2);
+  transform: scale(1.2);
 }
 
 .custom-card {
@@ -49,37 +49,40 @@ html {
 }
 
 .custom-card img {
-  height: 100%;
+  height: auto;
+  width: 100%;
   z-index: 10;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 
 .custom-card-body {
+  width: 100%;
+  height: auto;
   z-index: 30;
   position: absolute;
-  padding-bottom: 1rem;
   bottom: 0;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   background-color: rgba(250, 247, 245, 0.75);
 }
 
 .custom-card-text {
   opacity: 0;
-  margin-bottom: -150px;
+  margin-bottom: -10rem;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   flex-direction: column;
-  padding-top: 1rem;
 }
 
-.custom-card-text button {
-  margin-top: 2rem;
+.custom-card-text a {
   margin-left: auto;
   opacity: 0;
 }
 
 .custom-card:hover .custom-card-body {
-  padding-block: 3rem;
+  padding-block: 1.1rem;
   background-color: rgba(41, 19, 52, 0.8);
   color: hsl(var(--nc));
 }
@@ -89,6 +92,46 @@ html {
   opacity: 1;
 }
 
-.custom-card:hover .btn {
+.custom-card:hover a {
   opacity: 1;
+}
+
+@media (min-width: 640px) {
+  .custom-card-text {
+    margin-bottom: -14.5rem;
+  }
+
+  .custom-card:hover .custom-card-body {
+    padding-block: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .custom-card-text {
+    margin-bottom: -15rem;
+  }
+
+  .custom-card:hover .custom-card-body {
+    padding-block: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .custom-card-text {
+    margin-bottom: -14rem;
+  }
+
+  .custom-card:hover .custom-card-body {
+    padding-block: 2.5rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .custom-card-text {
+    margin-bottom: -14.5rem;
+  }
+
+  .custom-card:hover .custom-card-body {
+    padding-block: 3rem;
+  }
 }
