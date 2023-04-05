@@ -48,7 +48,9 @@ html {
   backface-visibility: hidden;
 }
 
-#drawing-app-img {
+#drawing-app-img,
+#tic-tac-toe-img,
+#slomo-hk-img {
   height: auto;
   width: 100%;
   z-index: 10;
@@ -58,13 +60,7 @@ html {
 }
 
 #tic-tac-toe-img {
-  height: 100%;
-  width: auto;
   object-fit: cover;
-  z-index: 10;
-  position: absolute;
-  top: 0px;
-  left: 0px;
 }
 
 .custom-card-body {
