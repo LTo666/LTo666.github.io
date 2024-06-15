@@ -25,8 +25,8 @@ html {
   border-top: 2px solid hsl(var(--pc));
 }
 
-#tools-container img:hover,
-#tools-container i:hover {
+.tools-container img:hover,
+.tools-container i:hover {
   transform: scale(1.4);
 }
 
@@ -152,3 +152,50 @@ img.custom-shadow {
     padding-block: 3rem;
   }
 }
+
+/** Progressive infinite horizontal scrolling animation - start */
+.scroller-inner {
+  padding-block: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.scroller[data-animated="true"] {
+  -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller[data-animated="true"] .scroller-inner {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll var(--_animation-duration, 40s) var(--_animation-direction, forwards) linear
+    infinite;
+}
+
+.scroller[data-animated="true"]:hover .scroller-inner,
+.scroller[data-animated="true"] .scroller-inner:hover {
+  animation-play-state: paused;
+}
+
+.scroller[data-direction="right"] {
+  --_animation-direction: reverse;
+}
+
+.scroller[data-direction="left"] {
+  --_animation-direction: forwards;
+}
+
+.scroller[data-speed="fast"] {
+  --_animation-duration: 20s;
+}
+
+.scroller[data-speed="slow"] {
+  --_animation-duration: 60s;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
+/** Progressive infinite horizontal scrolling animation - end */
