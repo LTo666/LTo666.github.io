@@ -25,6 +25,10 @@ html {
   border-top: 2px solid hsl(var(--pc));
 }
 
+.avatar > div:hover {
+  transform: scale(1.2);
+}
+
 .tools-container img:hover,
 .tools-container i:hover {
   transform: scale(1.4);
