@@ -21,100 +21,105 @@
     <title>Bruce Luk | A Passionate Software Enginner</title>
   </head>
 
-  <body class="bg-primary transition-colors ease-out duration-300">
-    <header
-      class="w-full wrapper transition-colors ease-out duration-300 bg-primary text-primary-content pt-4 sticky top-0 z-50 flex align-center"
-      id="header"
+  <body>
+    <div
+      id="headerContainer"
+      class="flex justify-center bg-primary transition-colors ease-out duration-300"
     >
-      <div class="flex md:block justify-between w-full md:w-auto">
-        <a
-          class="transition-all btn btn-ghost text-3xl btn-lg normal-case hover:btn-warning duration-500 ease-out"
-          href="#"
-        >
-          <strong>HOME</strong>
-        </a>
-        <div class="dropdown dropdown-end">
-          <label
-            tabindex="0"
-            class="transition-all ease-out duration-500 btn btn-ghost btn-lg md:hidden hover:btn-warning"
+      <header
+        class="transition-colors ease-out duration-300 bg-primary text-primary-content pt-4 sticky top-0 z-50 flex align-center"
+        id="header"
+      >
+        <div class="flex md:block justify-between w-full md:w-auto">
+          <a
+            class="transition-all btn btn-ghost text-3xl btn-lg normal-case hover:btn-warning duration-500 ease-out"
+            href="#"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
+            <strong>HOME</strong>
+          </a>
+          <div class="dropdown dropdown-end">
+            <label
+              tabindex="0"
+              class="transition-all ease-out duration-500 btn btn-ghost btn-lg md:hidden hover:btn-warning"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="4"
-                d="M4 6h16M4 12h8m-8 6h16"
-                class="transition-all ease-out duration-500"
-              />
-            </svg>
-          </label>
-          <div
-            tabindex="0"
-            class="transition-all ease-out duration-500 menu menu-compact dropdown-content mt-3 p-2 shadow-2xl shadow-neutral-600 bg-primary text-primary-content rounded-box w-80 text-center"
-            id="navbox"
-          >
-            <a href="#about">
-              <button
-                class="transition-all ease-out duration-500 btn btn-ghost text-2xl w-full my-4 hover:btn-warning normal-case"
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
               >
-                About
-              </button>
-            </a>
-            <a href="#skills">
-              <button
-                class="transition-all ease-out duration-500 btn btn-ghost text-2xl w-full my-4 hover:btn-warning normal-case"
-              >
-                Skills
-              </button>
-            </a>
-            <a href="#project">
-              <button
-                class="transition-all ease-out duration-500 btn btn-ghost text-2xl w-full my-4 hover:btn-warning normal-case"
-              >
-                Work
-              </button>
-            </a>
-            <a href="#contact">
-              <button
-                class="transition-all ease-out duration-500 btn btn-ghost text-2xl w-full my-4 hover:btn-warning normal-case"
-              >
-                Contact
-              </button>
-            </a>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="4"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                  class="transition-all ease-out duration-500"
+                />
+              </svg>
+            </label>
+            <div
+              tabindex="0"
+              class="transition-all ease-out duration-500 menu menu-compact dropdown-content mt-3 p-2 shadow-2xl shadow-neutral-600 bg-primary text-primary-content rounded-box w-80 text-center"
+              id="navbox"
+            >
+              <a href="#about">
+                <button
+                  class="transition-all ease-out duration-500 btn btn-ghost text-2xl w-full my-4 hover:btn-warning normal-case"
+                >
+                  About
+                </button>
+              </a>
+              <a href="#skills">
+                <button
+                  class="transition-all ease-out duration-500 btn btn-ghost text-2xl w-full my-4 hover:btn-warning normal-case"
+                >
+                  Skills
+                </button>
+              </a>
+              <a href="#project">
+                <button
+                  class="transition-all ease-out duration-500 btn btn-ghost text-2xl w-full my-4 hover:btn-warning normal-case"
+                >
+                  Work
+                </button>
+              </a>
+              <a href="#contact">
+                <button
+                  class="transition-all ease-out duration-500 btn btn-ghost text-2xl w-full my-4 hover:btn-warning normal-case"
+                >
+                  Contact
+                </button>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="hidden md:flex m-auto w-50">
-        <div class="menu menu-horizontal p-0 flex items-center" id="nav-link">
-          <a
-            class="btn btn-ghost transition-all mx-2 text-xl hover:btn-warning duration-500 ease-out normal-case"
-            href="#about"
-            >About</a
-          >
-          <a
-            class="btn btn-ghost transition-all mx-2 text-xl hover:btn-warning duration-500 ease-out normal-case"
-            href="#skills"
-            >Skills</a
-          >
-          <a
-            class="btn btn-ghost transition-all mx-2 text-xl hover:btn-warning duration-500 ease-out normal-case"
-            href="#project"
-            >Work</a
-          >
-          <a
-            class="btn btn-ghost transition-all mx-2 text-xl hover:btn-warning duration-500 ease-out normal-case"
-            href="#contact"
-            >Contact</a
-          >
+        <div class="hidden md:flex m-auto w-50">
+          <div class="menu menu-horizontal p-0 flex items-center" id="nav-link">
+            <a
+              class="btn btn-ghost transition-all mx-2 text-xl hover:btn-warning duration-500 ease-out normal-case"
+              href="#about"
+              >About</a
+            >
+            <a
+              class="btn btn-ghost transition-all mx-2 text-xl hover:btn-warning duration-500 ease-out normal-case"
+              href="#skills"
+              >Skills</a
+            >
+            <a
+              class="btn btn-ghost transition-all mx-2 text-xl hover:btn-warning duration-500 ease-out normal-case"
+              href="#project"
+              >Work</a
+            >
+            <a
+              class="btn btn-ghost transition-all mx-2 text-xl hover:btn-warning duration-500 ease-out normal-case"
+              href="#contact"
+              >Contact</a
+            >
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
+    </div>
 
     <section class="bg-primary flex justify-center" id="intro">
       <div class="wrapper pt-10 pb-16">

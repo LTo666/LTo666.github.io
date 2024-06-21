@@ -1,5 +1,15 @@
-/** Typewriter effect - start */
-document.addEventListener("DOMContentLoaded", function (event) {
+$(function () {
+  wow = new WOW({
+    boxClass: "wow",
+    animateClass: "animated",
+    offset: 100,
+    mobile: true,
+    live: false,
+  });
+
+  wow.init();
+
+  /** Typewriter effect - start */
   const sentencesMap = {
     greetings: "Hi! I'm",
     name: "Bruce Luk",
@@ -61,24 +71,23 @@ document.addEventListener("DOMContentLoaded", function (event) {
   setTimeout(function () {
     StartTextAnimation(0);
   }, 1000);
-});
-/** Typewriter effect - end */
+  /** Typewriter effect - end */
 
-$(function () {
-  wow = new WOW({
-    boxClass: "wow",
-    animateClass: "animated",
-    offset: 100,
-    mobile: true,
-    live: false,
+  /** Responsive navbar */
+  const maxWidth = $("#intro > div.wrapper > div").width();
+  $("#header").width(maxWidth);
+
+  $("#intro > div.wrapper > div").on("resize", function () {
+    // Code to execute when the element is resized
+    const newWidth = $("#intro > div.wrapper > div").width();
+    $("#header").width(newWidth);
   });
-
-  wow.init();
+  /** Responsive navbar */
 
   const chNavbar = () => {
     if (document.body.scrollTop > 54 || document.documentElement.scrollTop > 54) {
-      $("body").removeClass("bg-primary");
-      $("body").addClass("bg-neutral");
+      $("#headerContainer").removeClass("bg-primary");
+      $("#headerContainer").addClass("bg-neutral");
       $("#header").removeClass("bg-primary text-primary-content pt-4");
       $("#header").addClass("bg-neutral text-neutral-content");
       $("#navbox").removeClass("bg-primary text-primary-content shadow-neutral-600 w-80");
@@ -91,8 +100,8 @@ $(function () {
       $("#nav-link a").removeClass("text-2xl");
       $("#nav-link a").addClass("text-lg");
     } else {
-      $("body").addClass("bg-primary");
-      $("body").removeClass("bg-neutral");
+      $("#headerContainer").addClass("bg-primary");
+      $("#headerContainer").removeClass("bg-neutral");
       $("#header").addClass("bg-primary text-primary-content pt-4");
       $("#header").removeClass("bg-neutral text-neutral-content");
       $("#navbox").addClass("bg-primary text-primary-content shadow-neutral-600 w-80");
