@@ -80,13 +80,11 @@ $(function () {
   $(window).on("resize", function () {
     // Code to execute when the element is resized
     const newWidth = $("#intro > div.wrapper > div").width();
-    console.log(newWidth);
     $("#header").width(newWidth);
   });
   /** Responsive navbar */
 
   const topHeight = $("#headerContainer").height();
-  console.log(topHeight);
   $("#intro").css("margin-top", topHeight);
 
   const chNavbar = () => {
