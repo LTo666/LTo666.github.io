@@ -1,3 +1,69 @@
+/** Typewriter effect - start */
+document.addEventListener("DOMContentLoaded", function (event) {
+  const sentencesMap = {
+    greetings: "Hi! I'm",
+    name: "Bruce Luk",
+    job: "A Software Engineer.",
+  };
+  const dataText = Object.entries(sentencesMap);
+
+  // type one text in the typwriter
+  // keeps calling itself until the text is finished
+  function typeWriter(key, text, i, fnCallback) {
+    // check if text isn't finished yet
+    if (i < text.length) {
+      // add next character to h1
+      document.querySelector(`#${key}`).innerHTML =
+        text.substring(0, i + 1) + '<span class="insertion-point" aria-hidden="true"></span>';
+
+      // wait for a while and call this function again for next character
+      setTimeout(function () {
+        typeWriter(key, text, i + 1, fnCallback);
+      }, 100);
+    }
+    // text finished, call callback if there is a callback function
+    else if (typeof fnCallback == "function") {
+      // call callback after timeout
+      setTimeout(function () {
+        if (key !== "job") {
+          // Remove the insertion point
+          document.querySelector(`#${key}`).innerHTML = text;
+        }
+
+        fnCallback();
+      }, 1000);
+    }
+  }
+
+  // start a typewriter animation for a text in the dataText array
+  function StartTextAnimation(i) {
+    // debugger;
+    if (typeof dataText[i] == "undefined") {
+      setTimeout(function () {
+        for (const [key, _] of dataText) {
+          document.querySelector(`#${key}`).innerHTML = " ";
+        }
+
+        StartTextAnimation(0);
+      }, 10000);
+    }
+    // check if dataText[i] exists
+    if (dataText[i] && i < dataText[i][1].length) {
+      // text exists! start typewriter animation
+      typeWriter(dataText[i][0], dataText[i][1], 0, function () {
+        // after callback (and whole text has been animated), start next text
+        StartTextAnimation(i + 1);
+      });
+    }
+  }
+
+  // start the text animation
+  setTimeout(function () {
+    StartTextAnimation(0);
+  }, 1000);
+});
+/** Typewriter effect - end */
+
 $(function () {
   wow = new WOW({
     boxClass: "wow",
