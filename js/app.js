@@ -11,6 +11,8 @@ $(function () {
 
   const chNavbar = () => {
     if (document.body.scrollTop > 54 || document.documentElement.scrollTop > 54) {
+      $("body").removeClass("bg-primary");
+      $("body").addClass("bg-neutral");
       $("#header").removeClass("bg-primary text-primary-content pt-4");
       $("#header").addClass("bg-neutral text-neutral-content");
       $("#navbox").removeClass("bg-primary text-primary-content shadow-neutral-600 w-80");
@@ -23,6 +25,8 @@ $(function () {
       $("#nav-link a").removeClass("text-2xl");
       $("#nav-link a").addClass("text-lg");
     } else {
+      $("body").addClass("bg-primary");
+      $("body").removeClass("bg-neutral");
       $("#header").addClass("bg-primary text-primary-content pt-4");
       $("#header").removeClass("bg-neutral text-neutral-content");
       $("#navbox").addClass("bg-primary text-primary-content shadow-neutral-600 w-80");

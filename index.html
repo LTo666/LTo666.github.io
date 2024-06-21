@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@2.15.3/dist/full.css"
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css"
       rel="stylesheet"
       type="text/css"
     />
@@ -18,16 +19,22 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="stylesheet" href="./style.css" />
-    <title>A Passionate Frontend Developer | Bruce Luk</title>
+    <title>Bruce Luk | A Passionate Software Enginner</title>
   </head>
 
-  <body>
+  <body class="bg-primary transition-colors ease-out duration-300">
     <header
-      class="transition-colors ease-out duration-300 navbar bg-primary text-primary-content pt-4 sticky top-0 z-50"
+      class="w-full wrapper transition-colors ease-out duration-300 bg-primary text-primary-content pt-4 sticky top-0 z-50 flex align-center"
       id="header"
     >
-      <div class="navbar-start">
-        <div class="dropdown">
+      <div class="flex md:block justify-between w-full md:w-auto">
+        <a
+          class="transition-all btn btn-ghost text-3xl btn-lg normal-case hover:btn-warning duration-500 ease-out"
+          href="#"
+        >
+          <strong>HOME</strong>
+        </a>
+        <div class="dropdown dropdown-end">
           <label
             tabindex="0"
             class="transition-all ease-out duration-500 btn btn-ghost btn-lg md:hidden hover:btn-warning"
@@ -53,44 +60,39 @@
             class="transition-all ease-out duration-500 menu menu-compact dropdown-content mt-3 p-2 shadow-2xl shadow-neutral-600 bg-primary text-primary-content rounded-box w-80 text-center"
             id="navbox"
           >
-            <a href="#about"
-              ><button
+            <a href="#about">
+              <button
                 class="transition-all ease-out duration-500 btn btn-ghost text-2xl w-full my-4 hover:btn-warning normal-case"
               >
                 About
-              </button></a
-            >
-            <a href="#skills"
-              ><button
+              </button>
+            </a>
+            <a href="#skills">
+              <button
                 class="transition-all ease-out duration-500 btn btn-ghost text-2xl w-full my-4 hover:btn-warning normal-case"
               >
                 Skills
-              </button></a
-            >
-            <a href="#project"
-              ><button
+              </button>
+            </a>
+            <a href="#project">
+              <button
                 class="transition-all ease-out duration-500 btn btn-ghost text-2xl w-full my-4 hover:btn-warning normal-case"
               >
                 Work
-              </button></a
-            >
-            <a href="#contact"
-              ><button
+              </button>
+            </a>
+            <a href="#contact">
+              <button
                 class="transition-all ease-out duration-500 btn btn-ghost text-2xl w-full my-4 hover:btn-warning normal-case"
               >
                 Contact
-              </button></a
-            >
+              </button>
+            </a>
           </div>
         </div>
-        <a
-          class="transition-all btn btn-ghost text-3xl btn-lg normal-case ml-4 hover:btn-warning duration-500 ease-out"
-          href="#"
-          ><strong>HOME</strong></a
-        >
       </div>
-      <div class="navbar-center hidden md:flex">
-        <div class="menu menu-horizontal p-0 flex align-center" id="nav-link">
+      <div class="hidden md:flex m-auto w-50">
+        <div class="menu menu-horizontal p-0 flex items-center" id="nav-link">
           <a
             class="btn btn-ghost transition-all mx-2 text-xl hover:btn-warning duration-500 ease-out normal-case"
             href="#about"
@@ -113,7 +115,6 @@
           >
         </div>
       </div>
-      <div class="navbar-end"></div>
     </header>
 
     <section class="bg-primary flex justify-center" id="intro">
@@ -629,9 +630,9 @@
       </div>
     </div>
 
-    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
     <script src="./js/wow.min.js"></script>
+    </script>
     <script src="./js/app.js"></script>
   </body>
 </html>
