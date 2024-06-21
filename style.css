@@ -12,10 +12,11 @@ html {
 }
 
 .wrapper {
-  max-width: 1536px;
+  max-width: 1280px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 min(8%, 10%);
+  /* padding: 0 min(8%, 10%); */
+  padding-inline: 3rem;
 }
 
 .mono {
