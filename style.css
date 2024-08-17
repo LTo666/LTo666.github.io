@@ -99,6 +99,14 @@ img.custom-shadow {
   flex-direction: column;
 }
 
+.custom-card .custom-card-header > img {
+  opacity: 1;
+}
+
+.custom-card .tech-container {
+  opacity: 0;
+}
+
 .custom-card-text a {
   margin-left: auto;
   opacity: 0;
@@ -115,8 +123,13 @@ img.custom-shadow {
   opacity: 1;
 }
 
-.custom-card:hover a {
+.custom-card:hover a, 
+.custom-card:hover .tech-container {
   opacity: 1;
+}
+
+.custom-card:hover .custom-card-header > img {
+  opacity: 0;
 }
 
 @media (min-width: 640px) {
